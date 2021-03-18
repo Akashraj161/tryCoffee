@@ -1,0 +1,534 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  width: 100%;
+  scroll-behavior: smooth;
+  font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+}
+
+header {
+  width: 100%;
+}
+
+.box {
+  width: 100%;
+}
+
+h1 {
+  position: fixed;
+  text-align: center;
+  color: #333333;
+  top: 0%;
+  margin-top: 10px;
+  margin-bottom: 12px;
+  font-family: proxima-nova, sans-serif;
+  font-size: 38px;
+  line-height: 40px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+nav {
+  background-color: #ffffff;
+  position: fixed;
+  width: 100%;
+  padding-top: 60px;
+  margin-bottom: 70px;
+  font-size: 11px;
+  z-index: 2;
+}
+
+nav ul {
+  list-style: none;
+  overflow: hidden;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  padding: 10px;
+}
+
+ul.menu {
+  margin-bottom: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+div.section12 {
+  box-sizing: border-box;
+  height: 1100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-top: 100px;
+}
+
+div.section3 {
+  text-align: center;
+  margin-top: 180px;
+}
+
+p.section3Head {
+  color: #333333;
+  width: 100%;
+  margin-bottom: 25px;
+  font-family: proxima-nova, sans-serif;
+  font-size: 35px;
+  line-height: 48px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 1px;
+  animation: fadeIn ease 4s;
+}
+
+p.section3Dis {
+  font-size: 14px;
+  line-height: 20px;
+  color: #333;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-family: proxima-nova, sans-serif;
+  text-align: center;
+  letter-spacing: 1px;
+  animation: fadeIn ease 4s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.row {
+  margin-top: 150px;
+  display: flex;
+}
+
+.column1,
+.column2 {
+  flex: 50%;
+  float: left;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-radius: 10px;
+}
+
+.leftImg {
+  float: left;
+  padding-left: 100px;
+  padding-right: 25px;
+}
+.column1 img {
+  width: 100%;
+
+  transition: transform 0.2s;
+}
+.column1 img:hover {
+  transform: scale(1.03);
+}
+
+.column2 img {
+  transition: transform 0.2s;
+}
+.column2 img:hover {
+  transform: scale(1.03);
+}
+.rightImg {
+  float: right;
+  padding-right: 100px;
+  padding-left: 25px;
+}
+
+div.row img {
+  border-radius: 15px;
+}
+
+p.imgHead {
+  font-family: proxima-nova, sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-top: 30px;
+  color: #333;
+  animation: fadeIn ease 4s;
+}
+p.imgDes {
+  font-size: 14px;
+  line-height: 20px;
+  color: #333;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-family: proxima-nova, sans-serif;
+  text-align: center;
+  letter-spacing: 1px;
+  animation: fadeIn ease 4s;
+}
+
+.button {
+  margin-top: 12px;
+  width: 30%;
+  height: 40px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  background-color: #fff;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background-color: black;
+  color: #ffffff;
+  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+  border: 2px solid #ffffff;
+}
+
+.section4 {
+  background-image: radial-gradient(
+      circle farthest-corner at 50% 50%,
+      hsla(0, 0%, 100%, 0.8),
+      hsla(0, 0%, 100%, 0.3) 39%,
+      hsla(0, 0%, 100%, 0)
+    ),
+    url(coffeebeans.gif);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+}
+
+.section4 p {
+  text-align: center;
+  filter: blur(-10px);
+}
+
+.section4 p.head1 {
+  margin-top: 0;
+  margin-bottom: 28px;
+  font-family: proxima-nova, sans-serif;
+  color: #000;
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding-top: 310px;
+  animation: fadeIn ease 4s;
+}
+
+.section4 p.head2 {
+  margin-top: 10px;
+  margin-bottom: 34px;
+  font-family: proxima-nova, sans-serif;
+  font-size: 30px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #333333;
+  font-weight: 550;
+  animation: fadeIn ease 4s;
+}
+
+.section4 p.section4Dis {
+  margin-top: 20px;
+  font-family: proxima-nova, sans-serif;
+  color: #000;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  animation: fadeIn ease 4s;
+}
+
+.section5 {
+  height: 700px;
+}
+
+.section5 p {
+  text-align: center;
+}
+
+.section5Head {
+  padding-top: 200px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-family: proxima-nova, sans-serif;
+  color: #000;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  animation: fadeIn ease 4s;
+}
+
+.section5Dis {
+  height: 120px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: proxima-nova, sans-serif;
+  color: #656565;
+  font-size: 13px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 1px;
+  animation: fadeIn ease 4s;
+}
+
+.section5.box img {
+  vertical-align: middle;
+  display: inline-block;
+  position: relative;
+}
+
+.S5rightImg {
+  position: absolute;
+  width: 45%;
+  left: 75px;
+  bottom: 20px;
+  top: 50px;
+}
+
+.S5leftImg {
+  position: absolute;
+  bottom: 20px;
+  top: 50px;
+  width: 45%;
+  left: 80px;
+}
+
+.carAni {
+  background-image: url(carImage.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  width: 10%;
+  top: 20px;
+  height: 10%;
+  left: 500px;
+  animation: carMove 5s 1s infinite;
+  animation-delay: 2s;
+}
+
+@keyframes carMove {
+  form {
+    left: 500px;
+  }
+  to {
+    left: 800px;
+  }
+}
+
+.section6 {
+  background-image: url(wagon2.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 650px;
+}
+
+.section6 p {
+  padding-left: 80px;
+  color: #ffffff;
+}
+
+.section6Head {
+  padding-top: 200px;
+  align-self: center;
+  font-family: proxima-nova, sans-serif;
+  color: #fff;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: left;
+  letter-spacing: 1.4px;
+  animation: fadeIn ease 4s;
+}
+
+.section6Head2 {
+  padding-top: 20px;
+  align-self: center;
+  font-family: proxima-nova, sans-serif;
+  color: #fff;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 700;
+  text-align: left;
+  letter-spacing: 2px;
+  animation: fadeIn ease 4s;
+}
+
+.section6Dis {
+  padding-top: 40px;
+  align-self: end;
+  font-family: proxima-nova, sans-serif;
+  color: #fff;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: left;
+  letter-spacing: 1px;
+  animation: fadeIn ease 4s;
+}
+
+.section6button {
+  position: relative;
+  margin-left: 80px;
+  margin-top: 12px;
+  width: 20%;
+  height: 40px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  background-color: #fff;
+  text-transform: uppercase;
+  transition: transform 0.3s;
+}
+
+.section6button:hover {
+  background-color: black;
+  color: #ffffff;
+  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+  border: 2px solid #ffffff;
+  transform: translate(0px, 3px);
+}
+
+footer {
+  height: 450px;
+}
+.section7 {
+  display: flex;
+  height: 150px;
+  padding-top: 50px;
+  margin-top: 155px;
+  margin-bottom: 150px;
+}
+
+.section7Head {
+  font-family: proxima-nova, sans-serif;
+  font-size: 37px;
+  padding-left: 80px;
+  width: 40%;
+  line-height: 50px;
+  font-weight: 700;
+  text-align: left;
+  letter-spacing: 2px;
+}
+form {
+  display: inline-block;
+  width: 55%;
+  padding-left: 150px;
+}
+
+.form1 {
+  display: flex;
+  padding: 10px;
+}
+
+.formName {
+  margin-top: 8px;
+  align-items: center;
+  font-family: proxima-nova, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #333;
+}
+
+input {
+  border: 2px solid #000;
+  border-radius: 10px;
+  height: 35px;
+  align-items: center;
+}
+
+.inputfield1 {
+  box-sizing: border-box;
+  width: 300%;
+
+  margin-right: 30px;
+}
+
+.inputfield2 {
+  box-sizing: border-box;
+  width: 200%;
+
+  padding-right: 0px;
+}
+
+#submit-button {
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+#submit-button:hover {
+  background-color: black;
+  color: #ffffff;
+  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+  border: 2px solid #ffffff;
+  transform: translate(-10px);
+}
+
+.socialMedia {
+  position: fixed;
+  width: 45px;
+  height: 180px;
+  left: 0;
+  bottom: 200px;
+  border: 2px solid #000;
+  background-color: #ffffff;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.socialMedia i {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5px;
+  padding-top: 2px;
+  margin: 5px;
+  cursor: pointer;
+  color: #000;
+}
+
+/*.tooltiptext {
+  position: absolute;
+  left: 45px;
+  visibility: hidden;
+  top: 1px;
+  font-size: 14px;
+  width: 80px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 3px 0;
+  z-index: 1;
+}
+
+.fab .fa-facebook-square:hover .tooltiptext {
+  visibility: visible;
+}
+*/
+.lastFoot {
+  text-align: center;
+  color: #ffffff;
+  background-color: #000;
+  padding-top: 8px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.lastFoot p {
+  cursor: pointer;
+  height: 72px;
+}
